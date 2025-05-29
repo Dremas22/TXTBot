@@ -1,74 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-
-}
-
 .hero {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(45deg, #8c7ae6, #353b48);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #8c7ae6, #353b48);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .hero h1 {
-    font-size: 45px;
-    font-weight: 500;
-    margin-top: -50px;
-    margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 textarea {
-    width: 600px;
-    height: 250px;
-    background: #e056fd;
-    margin-left: 420px;
-    margin-bottom: 30px;
-    color: #dff9fb;
-    font-size: 25px;
-    border: none;
-    border-radius: 5px;
-
+  width: 90%;
+  max-width: 600px;
+  height: 250px;
+  background: #e056fd;
+  color: #dff9fb;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 textarea::placeholder {
-    padding: 10px;
-    color: black;
-    
+  color: black;
 }
 
 .row {
-    width: 600px;
-    display: flex;
-    align-self: center;
-    gap: 20px;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
 
+@media (min-width: 600px) {
+  .row {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 button {
-    width: 20ppx;
-    background: #1e90ff;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 30px;
-    border-radius: 35px;
-    border: none;
-    cursor: pointer;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
 }
 
 select {
-    flex: 1;
-    height: 50px;
-    background: #1e90ff;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: none;
+  flex: 1;
+  height: 50px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
 }
